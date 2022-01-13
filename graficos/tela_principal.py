@@ -48,19 +48,5 @@ frame_down.place(relheight=0.3,relwidth=1,rely=0.75)
 txt = Label(frame_down,text="aasdadaadaada")
 txt.pack()
 
-
-
-
-
-
-
-
-
-
-
-
-
 root.mainloop()
 
-
-print("aaaa")

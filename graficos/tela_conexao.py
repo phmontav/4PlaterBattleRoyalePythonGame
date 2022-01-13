@@ -7,22 +7,13 @@ import os
 def get_user():
     
     usuario = entry_usuario.get()
-    root.after(1000,root.quit())
+   # root.after(1000,root.quit())
+    connection_screen()
     return usuario
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
+def connection_screen():
+    frame_usuario.destroy()
+    root.update()
 
 root = Tk()
 WIDHT = 900
