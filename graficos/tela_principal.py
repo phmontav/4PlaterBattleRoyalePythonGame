@@ -14,8 +14,8 @@ big_fundo = fundo.zoom(2,1)
 WIDHT = big_fundo.width()
 
 
-my_help = str(help(Text))
-print(my_help)
+#my_help = str(help(Text))
+#print(my_help)
 
 warrior = PhotoImage(file="jogo/graficos/warrior2.gif")
 warrior = warrior.subsample(3,3)
