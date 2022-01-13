@@ -9,15 +9,15 @@ HEIGHT = 500
 #root.geometry("800x600+300+50")
 my_blue = "#48b8fa"
 root.title("Battle Royale")
-fundo = PhotoImage(file="jogo/graficos/floresta.png")
+fundo = PhotoImage(file="graficos/imagens/floresta.png")
 big_fundo = fundo.zoom(2,1)
 WIDHT = big_fundo.width()
 
 
-my_help = str(help(Text))
-print(my_help)
+#my_help = str(help(Text))
+#print(my_help)
 
-warrior = PhotoImage(file="jogo/graficos/warrior2.gif")
+warrior = PhotoImage(file="graficos/imagens/warrior2.gif")
 warrior = warrior.subsample(3,3)
 print(warrior.width())
 print(warrior.height())
@@ -60,6 +60,7 @@ txt.pack()
 
 
 
-
-
 root.mainloop()
+
+
+print("aaaa")

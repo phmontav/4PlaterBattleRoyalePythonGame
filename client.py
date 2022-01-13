@@ -54,27 +54,30 @@ def message(obj_socket, id):
 
         
 
+def connect(name):
 
+    try:
+        servidor = gethostbyname(gethostname())
+        porta = 43210
 
-servidor = gethostbyname(gethostname())
-porta = 43210
-
-obj_socket = socket(AF_INET, SOCK_STREAM)
-obj_socket.connect((servidor,porta))
-msg = input("insert Name: ")
-obj_socket.send(msg.encode())
-
-try:
-    while True:
-        
-        message(obj_socket,"")
-        #print(resposta.split(":"))
-except:
-    obj_socket.close()
+        obj_socket = socket(AF_INET, SOCK_STREAM)
+        obj_socket.connect((servidor,porta))
+        msg = name
+        obj_socket.send(msg.encode())
+        return obj_socket
+    except:
+        raise
 
 
 
-""" 
-while True: 
-    play()  
- """
+
+def play(obj_socket):
+    try:
+        while True:
+            
+            message(obj_socket,"")
+            #print(resposta.split(":"))
+    except:
+        #obj_socket.close()
+        pass
+
